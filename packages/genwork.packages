@@ -1,0 +1,7 @@
+python3-pip
+python3-venv
+base
+pandoc
+libxml2-dev
+libfontconfig1-dev
+hwinfo
