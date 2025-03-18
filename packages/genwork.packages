@@ -2,6 +2,7 @@ python3-pip
 python3-venv
 r-base
 wget
+curl
 pandoc
 libxml2-dev
 libfontconfig1-dev
