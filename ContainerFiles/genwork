@@ -15,10 +15,14 @@ RUN chmod +x genwork_setup.sh distrobox-shims.sh && /genwork_setup.sh
 RUN rm /genwork_setup.sh /distrobox-shims.sh /genwork.packages
 
 # Install libraries in R and python
+COPY ../packages/requirements.txt /
 RUN R -e "install.packages('readr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('tidyr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('dplyr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('ggplot2', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('knitr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('kableExtra', dependencies=TRUE, repos='http://cran.rstudio.com/')"
-
+RUN R -e "install.packages('igraph', dependencies=TRUE, repos='http://cran.rstudio.com/')"
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+RUN rm /requirements.txt
