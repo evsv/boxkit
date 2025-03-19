@@ -8,7 +8,8 @@ apt update && apt upgrade
 grep -v '^#' ./genwork.packages | xargs apt -y install
 
 # Installing python libraries
-#pip install pandas numpy ollama bertopic gensim
+python -m venv /general
+/general/bin/pip install -r requirements.txt
 
 # Installing R libraries
 #Rscript -e "install.packages(c(\"readr\", \"dplyr\", \"tidyr\", \"kableExtra\", \"ggplot2\", \"stringr\", \"lubridate\", \"igraph\"), lib=\"~/R/libs\")"
