@@ -16,7 +16,7 @@ RUN chmod +x genwork_setup.sh distrobox-shims.sh && /genwork_setup.sh
 RUN rm /genwork_setup.sh /distrobox-shims.sh /genwork.packages
 
 # Install libraries in R and python
-RUN python -m venv /pyenv
+RUN python3 -m venv /pyenv
 RUN /pyenv/bin/pip install -r requirements.txt
 # RUN R -e "install.packages('readr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 # RUN R -e "install.packages('tidyr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
