@@ -1,5 +1,8 @@
+ipython
 numpy
 pandas
+nltk
+gensim
 transformers
 ollama
 networkx
