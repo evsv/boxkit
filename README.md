@@ -25,22 +25,15 @@ Tag your image with `boxkit` to share with others!
 ## What's included in this image?
 
 **Software:**
-- Python, with pip and venv included
+- Python, with pip, venv and uv included
 - Base R
 - Pandoc for document rendering
 - A set of library dependencies for a variety of Python and R projects
 - A set of LaTex packages 
+- sqlite3 for basic db file writing
 - Please refer to `packages/genwork.packages` for a full list
 
 **R libraries pre-installed:**
 - Tidyverse packages: readr, tidyr, dplyr, ggplot2, knitr
 - Rmarkdown packages: knitr, kableExtra
-- Network science packages: igraph
 - Please refer `ContainerFiles/genwork` for the R command that installs packages
-
-**Python libraries pre-installed:**
-- A python virtual environment called "pyenv" is setup with a set of packages preinstalled. Please refer `ContainerFiles/genwork` for the python command setting up this environment
-- NLP packages: nltk, gensim, transformers, ollama
-- Network science packages: networkx
-- General numeric python computing: numpy, pandas
-- Misc: ipython
