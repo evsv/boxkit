@@ -20,6 +20,6 @@ R -e "install.packages('readr', dependencies=TRUE, repos='http://cran.rstudio.co
     R -e "install.packages('kableExtra', dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('igraph', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 
-python3 -m venv /pyenv && \
-    /pyenv/bin/pip install -r requirements.txt && \
-    chmod 777 -R /pyenv && rm /requirements.txt
+# python3 -m venv /pyenv && \
+#    /pyenv/bin/pip install -r requirements.txt && \
+#    chmod 777 -R /pyenv && rm /requirements.txt

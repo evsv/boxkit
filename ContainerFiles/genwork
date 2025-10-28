@@ -9,7 +9,7 @@ LABEL com.github.containers.toolbox="true" \
 COPY ../scripts/genwork_setup.sh /
 COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/genwork.packages /
-COPY ../packages/requirements.txt /
+# COPY ../packages/requirements.txt /
 
 # Run the setup scripts
 RUN chmod +x genwork_setup.sh distrobox-shims.sh && /genwork_setup.sh
