@@ -14,3 +14,6 @@ COPY ../packages/genwork.packages /
 # Run the setup scripts
 RUN chmod +x genwork_setup.sh distrobox-shims.sh && /genwork_setup.sh
 RUN rm /genwork_setup.sh /distrobox-shims.sh /genwork.packages
+
+# Install UV
+COPY --from=ghcr.io/astral-sh/uv:0.9.5 /uv /uvx /bin/
