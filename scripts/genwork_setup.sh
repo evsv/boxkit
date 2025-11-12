@@ -17,4 +17,5 @@ R -e "install.packages('readr', dependencies=TRUE, repos='http://cran.rstudio.co
     R -e "install.packages('dplyr', dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('ggplot2', dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
     R -e "install.packages('knitr', dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
-    R -e "install.packages('kableExtra', dependencies=TRUE, repos='http://cran.rstudio.com/')"
+    R -e "install.packages('kableExtra', dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
+    R -e "install.packages('renv', dependencies=TRUE, repos='http://cran.rstudio.com/')"
